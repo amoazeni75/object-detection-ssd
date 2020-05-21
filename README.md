@@ -37,3 +37,6 @@
   <h5>How can Find Objects in an Image?</h5>
   <p>Sliding window technique: take some window and for each position in the original image pass this sub-image to the CNN. One of the major problem of this method is its low speed, O(N^2). To solve this problem we would use convolution operation.</p>
   <p>SSD: The main concept is that by using CNN we would get same result as sliding window by passing the image through CNN just one time, that's why its name is single-shot. One more advantagous of this algorithm is that there is no need to tell the CNN which regions may have objects</p>
+<h3>The Problem of Scale</h3>
+<p>There are objects that may seem very small because of their distance to the camera, how can solve this problem?</p>
+<p>The general pattern of CNN is that you go through each layer the image is shirinking and therefore the features you are finding go from small to big. The idea is attach mini-neural network to intermediate layers of a pre-trained network. For each output we will do object detection separately.</p>
