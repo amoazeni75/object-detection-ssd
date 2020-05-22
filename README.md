@@ -1,6 +1,8 @@
 <h1>Object Detection using SSD</h1>
 <p>In this project we are going to implement a system which use CNN to detect objects in a picture using SSD (Single-Shot MultiBox Detector) algorithm</p>
 <p>SSD is good in both speed of detection and accuracy</p>
+<h1>Goal</h1>
+<p>Desing and implement a system using SSD algorithm to detect objects in a picture or video real time.</p>
 <h1>Project Outline</h1>
 <ul>
   <li>Object localization (we will see how to combine classification and regression).</li>
