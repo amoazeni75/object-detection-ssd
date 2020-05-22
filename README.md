@@ -59,4 +59,4 @@
   <li>Run this from the "research folder": <code>protoc object_detection/protos/*.proto --python_out=.</code>
 </ol>
 <h4>One Output Sample</h4>
-<imge src="https://github.com/amoazeni75/object-detection-ssd/blob/master/sea.jpg" alt="sea"/>
+<img src="https://github.com/amoazeni75/object-detection-ssd/blob/master/sea.jpg" alt="sea"/>
