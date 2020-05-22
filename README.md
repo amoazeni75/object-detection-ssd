@@ -58,3 +58,5 @@
   <li>Install Protocol Buffers: (windows) <code>conda install -c anaconda protobuf</code> To ensure about correct installation <code>protoc --version</code></li>
   <li>Run this from the "research folder": <code>protoc object_detection/protos/*.proto --python_out=.</code>
 </ol>
+<h4>One Output Sample</h4>
+<imge src="https://github.com/amoazeni75/object-detection-ssd/blob/master/sea.jpg" alt="sea"/>
