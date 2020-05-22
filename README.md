@@ -40,3 +40,19 @@
 <h3>The Problem of Scale</h3>
 <p>There are objects that may seem very small because of their distance to the camera, how can solve this problem?</p>
 <p>The general pattern of CNN is that you go through each layer the image is shirinking and therefore the features you are finding go from small to big. The idea is attach mini-neural network to intermediate layers of a pre-trained network. For each output we will do object detection separately.</p>
+<h3>The Problem of Shape (Aspect Ratio)</h3>
+<ul>
+<li>Windwo Size: In a picture there are objects with different sizes, for example people are tall and cars are wide, so what size should the window be?</li>
+<li>We might be looking at a window where both objects might appear in the same window with one occluding the other.</li>
+  <li>Different angle of an object: for example a person may lay down</li>
+</ul>
+<p>Solution is: instead of one window, use default boxes in each position, for each rect we try to detect an object by passing it through our CNN</p>
+<p>We not only look at the image at multiple scales but we apply each box to each window at each scale</p>
+
+<h3>Start Running the Project</h3>
+<ol>
+<li>Download the tensorflow/models repository: <code>git clone https://github.com/tensorflow/models.git</code></li>
+  <li>Start Notebook inside research/object_detection folder</li>
+  <li>Install Protocol Buffers: (windows) <code>conda install -c anaconda protobuf</code> To ensure about correct installation <code>protoc --version</code></li>
+  <li>Run this from the "research folder": <code>protoc object_detection/protos/*.proto --python_out=.</code>
+</ol>
