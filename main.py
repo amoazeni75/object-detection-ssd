@@ -111,13 +111,7 @@ def process_single_video(video_path, model):
     t0 = datetime.now()
     n_frames = 0
 
-    frames = []
-    for cur_frame in video_reader:
-        frames.append(cur_frame)
-    print("Number of frames : " + str(len(frames)))
-
-    # for frame in video_reader:
-    for frame in frames:
+    for frame in video_reader:
         # rename for convenience
         image_np = frame
         n_frames += 1
