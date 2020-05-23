@@ -61,7 +61,7 @@
     <li>Exmaple command for a video: <code>python main.py --content video --path "./traffic.mp4"</code></li>
 </ol>
 <h4>Sample Output for Detecting Objects in an Image</h4>
-<img src="https://github.com/amoazeni75/object-detection-ssd/blob/master/sea.jpg" alt="sea"/>
+<img src="https://github.com/amoazeni75/object-detection-ssd/blob/master/sea_output.png" alt="sea"/>
 <h4>Sample Output for Detecting Objects in a Video</h4>
 <video controls>
   <source src="movie.mp4" type="video/mp4">
